@@ -1,6 +1,6 @@
 import './App.css'
 
-function App() {
+export default function App() {
   return (
     <>
       <div></div>
@@ -8,4 +8,3 @@ function App() {
   )
 }
 
-export default App
