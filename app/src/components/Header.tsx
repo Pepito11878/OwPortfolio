@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 
 export const link = [
-  { href: "/", label: "Accueil" },
+  { href: "/", label: "Home" },
   { href: "/Contact", label: "Contact" },
 ];
 
