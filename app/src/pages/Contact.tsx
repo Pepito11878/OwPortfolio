@@ -1,4 +1,4 @@
-import { FaDiscord } from "react-icons/fa"; // besoin d'installer react-icons
+import { FaDiscord } from "react-icons/fa";
 import { useDocumentTitle } from "../assets/useDocumentTitle";
 
 export default function Contact() {

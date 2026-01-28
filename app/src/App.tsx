@@ -1,18 +1,21 @@
 import { useDocumentTitle } from "./assets/useDocumentTitle";
 import { Cards } from "./components/Cards";
 import { SectionTitle } from "./components/SectionTitle";
+import { FaDiscord } from "react-icons/fa";
 
 export default function App() {
-  useDocumentTitle("Pepito11 - Home")
+  useDocumentTitle("Pepito11 - Home");
 
   return (
     <main className="bg-[#0a0a0f]">
       <section className="min-h-[80vh] text-gray-200 flex flex-col items-center text-center px-6 pt-24">
-        <img
-          className="w-36 h-36 rounded-full border-4 border-pink-400 shadow-[0_0_30px_rgba(236,72,153,0.35)]"
-          src="/images/profile-picture.jpg"
-          alt="profile picture"
-        />
+        <a href="https://discord.com/users/pepito_11">
+          <img
+            className="w-36 h-36 rounded-full border-4 border-pink-400 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:border-[#7289da] hover:shadow-[0_0_30px_rgba(114,137,218,0.35)] transition-all duration-200"
+            src="/images/profile-picture.jpg"
+            alt="profile picture"
+          />
+        </a>
 
         <h1 className="mt-6 text-5xl font-extrabold tracking-tight">
           Pepito11
@@ -24,11 +27,11 @@ export default function App() {
 
         <div className="mt-10 max-w-3xl space-y-6 text-gray-300 leading-relaxed">
           <p>
-            Former Grandmaster support player with consistent performance in scrims
-            around 4200 SR, including multiple peaks at 4500+. I have strong
-            experience in competitive environments and high-level team play.
-            After several seasons playing support, I developed solid game sense,
-            strong communication skills, and a deep understanding of team
+            Former Grandmaster support player with consistent performance in
+            scrims around 4200 SR, including multiple peaks at 4500+. I have
+            strong experience in competitive environments and high-level team
+            play. After several seasons playing support, I developed solid game
+            sense, strong communication skills, and a deep understanding of team
             dynamics.
           </p>
 
@@ -40,6 +43,15 @@ export default function App() {
             ready to commit to a long-term competitive project.
           </p>
         </div>
+
+        <a
+          className="flex items-center gap-2 uppercase border-2 border-[#7289da] text-[#7289da] rounded-lg pr-5 pl-5 p-2.5 mt-20 hover:bg-[#7289da] hover:text-black font-semibold transition-all duration-200"
+          href="https://discord.com/users/pepito_11"
+          target="blank_"
+        >
+          <FaDiscord />
+          my discord
+        </a>
       </section>
 
       <SectionTitle label="Rank by role" />
