@@ -83,7 +83,6 @@ export default function App() {
             alt="hero image"
             title="tracer"
             description="The hero I think I'm best at."
-            heroRanked="~ 3300 sr"
           />
 
           <Cards
@@ -91,7 +90,6 @@ export default function App() {
             alt="hero image"
             title="sojourn"
             description="Hero with whom I am very solid."
-            heroRanked="~ 3500 sr"
           />
 
           <Cards
@@ -99,7 +97,6 @@ export default function App() {
             alt="hero image"
             title="cassidy"
             description="Hero on whom I stand firm."
-            heroRanked="~ 3500 sr"
           />
         </div>
       </section>
