@@ -9,7 +9,7 @@ export default function App() {
   return (
     <main className="bg-[#0a0a0f]">
       <section className="min-h-[80vh] text-gray-200 flex flex-col items-center text-center px-6 pt-24">
-        <a href="https://discord.com/users/pepito_11">
+        <a href="https://discord.com/users/pepito_11" target="blank_">
           <img
             className="w-36 h-36 rounded-full border-4 border-pink-400 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:border-[#7289da] hover:shadow-[0_0_30px_rgba(114,137,218,0.35)] transition-all duration-200"
             src="/images/profile-picture.jpg"
