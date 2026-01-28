@@ -70,7 +70,7 @@ export default function App() {
             link="/images/tracer.png"
             alt="hero image"
             title="tracer"
-            description="Mon hero que je maitrise le mieux selon moi."
+            description="The hero I think I'm best at."
             heroRanked="~ 3300 sr"
           />
 
@@ -78,7 +78,7 @@ export default function App() {
             link="/images/sojourn.png"
             alt="hero image"
             title="sojourn"
-            description="Hero avec lequel je suis très solide."
+            description="Hero with whom I am very solid."
             heroRanked="~ 3500 sr"
           />
 
@@ -86,7 +86,7 @@ export default function App() {
             link="/images/cassidy.png"
             alt="hero image"
             title="cassidy"
-            description="Hero sur lequel je suis solide."
+            description="Hero on whom I stand firm."
             heroRanked="~ 3500 sr"
           />
         </div>
