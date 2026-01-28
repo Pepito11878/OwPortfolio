@@ -1,7 +1,10 @@
+import { useDocumentTitle } from "./assets/useDocumentTitle";
 import { Cards } from "./components/Cards";
 import { SectionTitle } from "./components/SectionTitle";
 
 export default function App() {
+  useDocumentTitle("Pepito11 - Home")
+
   return (
     <main className="bg-[#0a0a0f]">
       <section className="min-h-[80vh] text-gray-200 flex flex-col items-center text-center px-6 pt-24">
@@ -16,12 +19,12 @@ export default function App() {
         </h1>
 
         <h2 className="mt-2 text-pink-400 text-base uppercase tracking-widest">
-          DPS Hitscan — 4k5+ Peak (Scrims)
+          DPS Hitscan — no elo for now
         </h2>
 
         <div className="mt-10 max-w-3xl space-y-6 text-gray-300 leading-relaxed">
           <p>
-            Former Grandmaster player with consistent performance in scrims
+            Former Grandmaster support player with consistent performance in scrims
             around 4200 SR, including multiple peaks at 4500+. I have strong
             experience in competitive environments and high-level team play.
             After several seasons playing support, I developed solid game sense,
@@ -47,14 +50,14 @@ export default function App() {
             link="/images/Master.webp"
             alt="master logo"
             title="DPS"
-            description="Peak Master 3 — actuellement Master 4"
+            description="Peak Master 3 — actually Master 4"
           />
 
           <Cards
             link="/images/gm.webp"
             alt="grand master logo"
             title="Support"
-            description="Peak Grand Master 2 — actuellement Grand Master 3"
+            description="Peak Grand Master 2 — actually Grand Master 3"
           />
         </div>
       </section>

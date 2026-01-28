@@ -1,6 +1,9 @@
 import { FaDiscord } from "react-icons/fa"; // besoin d'installer react-icons
+import { useDocumentTitle } from "../assets/useDocumentTitle";
 
 export default function Contact() {
+  useDocumentTitle("Pepito11 - Contact")
+
   return (
     <main className="min-h-screen bg-[#0a0a0f] text-gray-200 flex flex-col items-center px-6 pt-32">
 
