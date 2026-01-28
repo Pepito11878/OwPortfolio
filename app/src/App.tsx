@@ -1,9 +1,9 @@
 import { Cards } from "./components/Cards";
+import { SectionTitle } from "./components/SectionTitle";
 
 export default function App() {
   return (
     <main className="bg-[#0a0a0f]">
-
       <section className="min-h-[80vh] text-gray-200 flex flex-col items-center text-center px-6 pt-24">
         <img
           className="w-36 h-36 rounded-full border-4 border-pink-400 shadow-[0_0_30px_rgba(236,72,153,0.35)]"
@@ -39,14 +39,9 @@ export default function App() {
         </div>
       </section>
 
-      <div className="relative w-full max-w-5xl mx-auto my-28">
-        <div className="border-t border-gray-800" />
-        <h3 className="absolute left-1/2 -translate-x-1/2 -top-3 bg-[#0a0a0f] px-6 text-pink-400 text-lg uppercase tracking-widest">
-          Rank by role
-        </h3>
-      </div>
+      <SectionTitle label="Rank by role" />
 
-      <section className="min-h-[80vh] text-gray-200 flex flex-col items-center px-6 pt-20">
+      <section className="min-h-[50vh] text-gray-200 flex flex-col items-center px-6 pt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           <Cards
             link="/images/Master.webp"
@@ -64,6 +59,35 @@ export default function App() {
         </div>
       </section>
 
+      <SectionTitle label="Hero played" />
+
+      <section className="min-h-[60vh] text-gray-200 flex flex-col items-center px-6 pt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto">
+          <Cards
+            link="/images/tracer.png"
+            alt="hero image"
+            title="tracer"
+            description="Mon hero que je maitrise le mieux selon moi."
+            heroRanked="~ 3300 sr"
+          />
+
+          <Cards
+            link="/images/sojourn.png"
+            alt="hero image"
+            title="sojourn"
+            description="Hero avec lequel je suis très solide."
+            heroRanked="~ 3500 sr"
+          />
+
+          <Cards
+            link="/images/cassidy.png"
+            alt="hero image"
+            title="cassidy"
+            description="Hero sur lequel je suis solide."
+            heroRanked="~ 3500 sr"
+          />
+        </div>
+      </section>
     </main>
   );
 }
