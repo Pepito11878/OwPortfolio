@@ -7,7 +7,7 @@ export const link = [
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#07070b] border-b border-gray-800">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#07070b] border-b border-gray-900">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* Menu à gauche */}

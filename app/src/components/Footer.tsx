@@ -4,7 +4,7 @@ export function Footer() {
       <div className="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-center gap-4">
         
         <p className="text-gray-400 text-sm">
-          fait en {new Date().getFullYear()} par <span className="text-pink-400 font-semibold">Pepito11</span>
+          fait en 2026 par <span className="text-pink-400 font-semibold">Pepito11</span>
         </p>
 
       </div>

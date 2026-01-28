@@ -2,8 +2,9 @@ import { Cards } from "./components/Cards";
 
 export default function App() {
   return (
-    <main>
-      <section className="min-h-screen bg-[#0a0a0f] text-gray-200 flex flex-col items-center text-center px-6 pt-24">
+    <main className="bg-[#0a0a0f]">
+
+      <section className="min-h-[80vh] text-gray-200 flex flex-col items-center text-center px-6 pt-24">
         <img
           className="w-36 h-36 rounded-full border-4 border-pink-400 shadow-[0_0_30px_rgba(236,72,153,0.35)]"
           src="/images/profile-picture.jpg"
@@ -14,7 +15,7 @@ export default function App() {
           Pepito11
         </h1>
 
-        <h2 className="mt-2 text-pink-400 text-sm uppercase tracking-widest">
+        <h2 className="mt-2 text-pink-400 text-base uppercase tracking-widest">
           DPS Hitscan — 4k5+ Peak (Scrims)
         </h2>
 
@@ -37,14 +38,32 @@ export default function App() {
           </p>
         </div>
       </section>
-      
-      <section className="min-h-screen bg-[#0a0a0f] text-gray-200 flex justify-center items-center text-center px-6 pt-24">
 
-        <h1>Rank by role</h1>
+      <div className="relative w-full max-w-5xl mx-auto my-28">
+        <div className="border-t border-gray-800" />
+        <h3 className="absolute left-1/2 -translate-x-1/2 -top-3 bg-[#0a0a0f] px-6 text-pink-400 text-lg uppercase tracking-widest">
+          Rank by role
+        </h3>
+      </div>
 
-        <Cards alt="test" title="test" description="ceci est une description test"/>
-        <Cards alt="test" title="test" description="ceci est une description test"/>
+      <section className="min-h-[80vh] text-gray-200 flex flex-col items-center px-6 pt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+          <Cards
+            link="/images/Master.webp"
+            alt="master logo"
+            title="DPS"
+            description="Peak Master 3 — actuellement Master 4"
+          />
+
+          <Cards
+            link="/images/gm.webp"
+            alt="grand master logo"
+            title="Support"
+            description="Peak Grand Master 2 — actuellement Grand Master 3"
+          />
+        </div>
       </section>
+
     </main>
   );
 }
