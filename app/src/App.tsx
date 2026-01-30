@@ -56,7 +56,7 @@ export default function App() {
 
       <SectionTitle label="Rank by role" />
 
-      <section className="min-h-[50vh] text-gray-200 flex flex-col items-center px-6 pt-20">
+      <section className="min-h-[50vh] text-gray-200 flex flex-col items-center px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           <Cards
             link="/images/Master.webp"
@@ -76,8 +76,8 @@ export default function App() {
 
       <SectionTitle label="Hero played" />
 
-      <section className="min-h-[60vh] text-gray-200 flex flex-col items-center px-6 pt-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mb-10">
+      <section className="min-h-[60vh] text-gray-200 flex flex-col items-center px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mb-10 lg:mb-0">
           <Cards
             link="/images/tracer.png"
             alt="hero image"
