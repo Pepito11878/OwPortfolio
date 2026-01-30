@@ -62,14 +62,14 @@ export default function App() {
             link="/images/Master.webp"
             alt="master logo"
             title="DPS"
-            description="Peak Master 3 — actually Master 4"
+            description="Peak Master 3"
           />
 
           <Cards
             link="/images/gm.webp"
             alt="grand master logo"
             title="Support"
-            description="Peak Grand Master 2 — actually Grand Master 3"
+            description="Peak Grand Master 2"
           />
         </div>
       </section>
