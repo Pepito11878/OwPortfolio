@@ -8,7 +8,7 @@ interface Props {
 
 export function Cards({ link, alt, title, description, subtitle }: Props) {
   return (
-    <div className="w-full max-w-xs bg-[#0f0f16] border border-gray-800 rounded-3xl px-6 py-8 flex flex-col items-center text-center transition-all duration-300 hover:border-pink-400 hover:shadow-[0_0_30px_rgba(236,72,153,0.25)]">
+    <div className="w-full max-w-xs min-w-3xs bg-[#0f0f16] border border-gray-800 rounded-3xl px-6 py-8 flex flex-col items-center text-center transition-all duration-300 hover:border-pink-400 hover:shadow-[0_0_30px_rgba(236,72,153,0.25)]">
       
       <img
         src={link}
