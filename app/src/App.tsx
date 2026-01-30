@@ -77,7 +77,7 @@ export default function App() {
       <SectionTitle label="Hero played" />
 
       <section className="min-h-[60vh] text-gray-200 flex flex-col items-center px-6 pt-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mb-10">
           <Cards
             link="/images/tracer.png"
             alt="hero image"
