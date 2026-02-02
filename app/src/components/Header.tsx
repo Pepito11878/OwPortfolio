@@ -8,9 +8,8 @@ export const link = [
 export function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#07070b] border-b border-gray-900">
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         
-        {/* Menu à gauche */}
         <ul className="flex gap-8 text-base">
           {link.map((key) => (
             <li key={key.href}>
@@ -29,10 +28,10 @@ export function Header() {
         </ul>
 
         {/* Nom à droite */}
-        <div className="text-pink-400 font-bold tracking-widest text-base">
+        <span className="text-pink-400 font-bold tracking-widest text-base">
           Pepito11
-        </div>
-      </div>
+        </span>
+      </nav>
     </header>
   );
 }
