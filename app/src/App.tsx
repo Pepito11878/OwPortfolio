@@ -81,14 +81,14 @@ export default function App() {
           <Cards
             link="/images/sojourn.png"
             alt="hero image"
-            title="tracer"
+            title="sojourn"
             description="The hero I think I'm best at."
           />
 
           <Cards
             link="/images/tracer.png"
             alt="hero image"
-            title="sojourn"
+            title="tracer"
             description="Hero with whom I am very solid."
           />
 
