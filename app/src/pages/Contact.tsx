@@ -25,6 +25,7 @@ export default function Contact() {
             <input
               type="email"
               name="email"
+              inputMode="email"
               placeholder="your@email.com"
               className="bg-[#0f0f16] border border-gray-800 rounded-lg px-4 py-3 text-gray-200 outline-none focus:border-pink-400 focus:shadow-[0_0_15px_rgba(236,72,153,0.35)] transition-all"
             />
