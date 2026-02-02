@@ -79,14 +79,14 @@ export default function App() {
       <section className="min-h-[60vh] text-gray-200 flex flex-col items-center px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mb-10 lg:mb-0">
           <Cards
-            link="/images/tracer.png"
+            link="/images/sojourn.png"
             alt="hero image"
             title="tracer"
             description="The hero I think I'm best at."
           />
 
           <Cards
-            link="/images/sojourn.png"
+            link="/images/tracer.png"
             alt="hero image"
             title="sojourn"
             description="Hero with whom I am very solid."
