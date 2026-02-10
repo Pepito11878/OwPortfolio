@@ -28,7 +28,7 @@ export default function App() {
         <div className="mt-10 max-w-3xl space-y-6 text-gray-300 leading-relaxed">
           <p>
             Former Grandmaster support player with consistent performance in
-            scrims around 4200 SR, including multiple peaks at 4500+. I have
+            scrims around 4200 SR, including multiple scrim at 4500+. I have
             strong experience in competitive environments and high-level team
             play. After several seasons playing support, I developed solid game
             sense, strong communication skills, and a deep understanding of team
