@@ -1,7 +1,7 @@
 import { useDocumentTitle } from "./assets/useDocumentTitle";
 import { Cards } from "./components/Cards";
 import { SectionTitle } from "./components/SectionTitle";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaTwitch } from "react-icons/fa";
 
 export default function App() {
   useDocumentTitle("Pepito11 - Home");
@@ -22,7 +22,7 @@ export default function App() {
         </h1>
 
         <h2 className="mt-2 text-pink-400 text-base uppercase tracking-widest">
-          DPS Hitscan — no elo for now
+          DPS flex — no elo for now
         </h2>
 
         <div className="mt-10 max-w-3xl space-y-6 text-gray-300 leading-relaxed">
@@ -38,20 +38,31 @@ export default function App() {
           <p>
             Over time, the support role stopped matching my playstyle and
             motivation, which led me to switch roles. I’m now fully focused on
-            DPS hitscan, where I want to improve, compete, and contribute to a
+            DPS flex, where I want to improve, compete, and contribute to a
             structured team environment. I’m highly motivated, serious, and
             ready to commit to a long-term competitive project.
           </p>
         </div>
 
-        <a
-          className="flex items-center gap-2 uppercase border-2 border-[#7289da] text-[#7289da] rounded-lg pr-5 pl-5 p-2.5 mt-20 hover:bg-[#7289da] hover:text-black font-semibold transition-all duration-200"
-          href="https://discord.com/users/pepito_11"
-          target="blank_"
-        >
-          <FaDiscord />
-          my discord
-        </a>
+        <div className="flex flex-col gap-5 lg:flex-row md:flex-row">
+          <a
+            className="flex items-center gap-2 uppercase border-2 border-[#7289da] text-[#7289da] rounded-lg pr-5 pl-5 p-2.5 mt-20 hover:bg-[#7289da] hover:text-black font-semibold transition-all duration-200"
+            href="https://discord.com/users/pepito_11"
+            target="blank_"
+          >
+            <FaDiscord />
+            my discord
+          </a>
+
+          <a
+            className="flex items-center gap-2 uppercase border-2 border-[#9146FF] text-[#9146FF] rounded-lg pr-5 pl-5 p-2.5 mt-20 hover:bg-[#9146FF] hover:text-black font-semibold transition-all duration-200"
+            href="https://www.twitch.tv/pepito11878"
+            target="blank_"
+          >
+            <FaTwitch />
+            my twitch
+          </a>
+        </div>
       </section>
 
       <SectionTitle label="Rank by role" />
