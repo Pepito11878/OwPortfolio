@@ -2,6 +2,7 @@ import { useDocumentTitle } from "./assets/useDocumentTitle";
 import { Cards } from "./components/Cards";
 import { SectionTitle } from "./components/SectionTitle";
 import { FaDiscord, FaTwitch } from "react-icons/fa";
+import { MdDownload } from "react-icons/md";
 
 export default function App() {
   useDocumentTitle("Pepito11 - Home");
@@ -22,25 +23,17 @@ export default function App() {
         </h1>
 
         <h2 className="mt-2 text-pink-400 text-base uppercase tracking-widest">
-          DPS flex — no elo for now
+          flex support — 4k5+
         </h2>
 
         <div className="mt-10 max-w-3xl space-y-6 text-gray-300 leading-relaxed">
           <p>
             Former Grandmaster support player with consistent performance in
-            scrims around 4200 SR, including multiple scrim at 4500+. I have
-            strong experience in competitive environments and high-level team
-            play. After several seasons playing support, I developed solid game
-            sense, strong communication skills, and a deep understanding of team
-            dynamics.
-          </p>
-
-          <p>
-            Over time, the support role stopped matching my playstyle and
-            motivation, which led me to switch roles. I’m now fully focused on
-            DPS flex, where I want to improve, compete, and contribute to a
-            structured team environment. I’m highly motivated, serious, and
-            ready to commit to a long-term competitive project.
+            scrims around 4200 SR, including multiple scrim at 4500+ advanced
+            and expert. I have strong experience in competitive environments and
+            high-level team play. After several seasons playing support, I
+            developed solid game sense, strong communication skills, and a deep
+            understanding of team dynamics.
           </p>
         </div>
 
@@ -90,26 +83,31 @@ export default function App() {
       <section className="min-h-[60vh] text-gray-200 flex flex-col items-center px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mb-10 lg:mb-0">
           <Cards
-            link="/images/sojourn.png"
+            link="/images/baptiste.png"
             alt="hero image"
-            title="sojourn"
+            title="Baptiste"
             description="The hero I think I'm best at."
           />
 
           <Cards
-            link="/images/tracer.png"
+            link="/images/illary.png"
             alt="hero image"
-            title="tracer"
+            title="Illary"
             description="Hero with whom I am very solid."
           />
 
           <Cards
-            link="/images/cassidy.png"
+            link="/images/kiriko.png"
             alt="hero image"
-            title="cassidy"
+            title="Kiriko"
             description="Hero on whom I stand firm."
           />
         </div>
+
+        <a className="text-pink-400 flex items-center gap-1 bg-pink-400/5 border border-pink-400/30 pr-5 pl-5 p-2.5 uppercase rounded-lg mt-20 transition-all duration-300 hover:border-pink-400 hover:bg-pink-400/10" href="/images/tierlist.png" download>
+          <MdDownload/>
+          download tierlist
+        </a>
       </section>
     </main>
   );

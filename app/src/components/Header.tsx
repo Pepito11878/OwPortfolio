@@ -17,7 +17,7 @@ export function Header() {
                 to={key.href}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-pink-400 font-semibold underline underline-offset-4 decoration-pink-400"
+                    ? "text-pink-400 font-semibold underline underline-offset-7 decoration-pink-400"
                     : "text-gray-300 hover:text-pink-400 transition-colors"
                 }
               >
