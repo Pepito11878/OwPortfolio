@@ -104,7 +104,7 @@ export default function App() {
           />
         </div>
 
-        <a className="text-pink-400 flex items-center gap-1 bg-pink-400/5 border border-pink-400/30 pr-5 pl-5 p-2.5 uppercase rounded-lg mt-20 transition-all duration-300 hover:border-pink-400 hover:bg-pink-400/10" href="/images/tierlist.png" download>
+        <a className="sm:mb-20 text-pink-400 flex items-center gap-1 bg-pink-400/5 border border-pink-400/30 pr-5 pl-5 p-2.5 uppercase rounded-lg mt-20 transition-all duration-300 hover:border-pink-400 hover:bg-pink-400/10" href="/images/tierlist.png" download>
           <MdDownload/>
           download tierlist
         </a>
