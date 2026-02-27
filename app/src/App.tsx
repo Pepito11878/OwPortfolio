@@ -3,9 +3,12 @@ import { Cards } from "./components/Cards";
 import { SectionTitle } from "./components/SectionTitle";
 import { FaDiscord, FaTwitch } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
+import { useState } from "react";
 
 export default function App() {
   useDocumentTitle("Pepito11 - Home");
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <main className="bg-[#0a0a0f]">
@@ -104,11 +107,39 @@ export default function App() {
           />
         </div>
 
-        <a className="mb-20 lg:mb-0 text-pink-400 flex items-center gap-1 bg-pink-400/5 border border-pink-400/30 pr-5 pl-5 p-2.5 uppercase rounded-lg mt-20 transition-all duration-300 hover:border-pink-400 hover:bg-pink-400/10" href="/images/tierlist.png" download>
-          <MdDownload/>
+        <img
+          onClick={() => setIsOpen(true)}
+          className="lg:mt-20 cursor-pointer"
+          src="/images/tierlist.png"
+          alt="tierlist"
+        />
+
+        <a
+          className="mb-20 text-pink-400 flex items-center gap-1 bg-pink-400/5 border border-pink-400/30 pr-5 pl-5 p-2.5 uppercase rounded-lg mt-20 transition-all duration-300 hover:border-pink-400 hover:bg-pink-400/10"
+          href="/images/tierlist.png"
+          download
+        >
+          <MdDownload />
           download tierlist
         </a>
       </section>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+            if (e.target === e.currentTarget) {
+              setIsOpen(false);
+            }
+          }}
+        >
+          <img
+            src="/images/tierlist.png"
+            alt="tierlist large"
+            className="max-w-[150%] max-h-[150%] rotate-90 lg:rotate-none md:rotate-none rounded-lg shadow-2xl"
+          />
+        </div>
+      )}
     </main>
   );
 }
